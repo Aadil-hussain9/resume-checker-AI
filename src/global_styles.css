@@ -1,0 +1,284 @@
+/* Add these styles to your global CSS */
+
+.error-snackbar {
+  background: #f44336;
+  color: white;
+}
+
+.success-snackbar {
+  background: #4caf50;
+  color: white;
+}
+
+.mat-mdc-snack-bar-container {
+  margin: 16px !important;
+}
+
+.mat-mdc-snack-bar-container .mdc-snackbar__surface {
+  border-radius: 8px !important;
+}
+
+/* app-layout structure */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+}
+
+/* Sidebar styles */
+.side-nav {
+  width: 240px;
+  background: #1e1e2f;
+  color: white;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  padding-top: 60px;
+  position: fixed;
+  height: 100vh;
+  z-index: 2;
+}
+
+.side-nav.collapsed {
+  width: 60px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-item:hover {
+  background-color: #2c2c3e;
+}
+
+.nav-item i {
+  margin-right: 16px;
+}
+
+.side-nav.collapsed .nav-item span {
+  display: none;
+}
+
+.nav-item.active {
+  background-color: #3f51b5;
+}
+
+/* Top nav toggle button */
+.nav-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  border: none;
+  z-index: 3;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.nav-toggle i {
+  font-size: 24px;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+  flex-grow: 1;
+}
+
+.main-content.expanded {
+  margin-left: 60px;
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Floating action button */
+.floating-action-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3f51b5;
+  color: white;
+  border-radius: 50%;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* Optional: pulse animation */
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+::ng-deep .snack-success {
+  background-color: #4caf50;
+  color: #fff;
+  font-weight: 500;
+}
+/* Add these styles to your global CSS */
+
+/* Material Date Picker Styling */
+.mat-datepicker-content {
+  background: white !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.mat-calendar {
+  padding: 16px !important;
+}
+
+.mat-calendar-header {
+  background: #3f51b5 !important;
+  color: white !important;
+  padding: 16px !important;
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.mat-calendar-body-selected {
+  background-color: #3f51b5 !important;
+  border-radius: 999px !important;
+}
+
+.mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+  background-color: rgba(63, 81, 181, 0.3) !important;
+  border-radius: 999px !important;
+}
+
+/* Material Select Styling */
+.mat-select-panel {
+  background: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.mat-option {
+  padding: 12px 16px !important;
+  line-height: 24px !important;
+}
+
+.mat-option:hover:not(.mat-option-disabled) {
+  background: rgba(63, 81, 181, 0.1) !important;
+}
+
+.mat-option.mat-selected:not(.mat-option-multiple):not(.mat-option-disabled) {
+  background: rgba(63, 81, 181, 0.1) !important;
+  color: #3f51b5 !important;
+}
+
+/* Material Form Field Styling */
+.mat-mdc-form-field {
+  width: 100% !important;
+}
+
+.mat-mdc-text-field-wrapper {
+  background: white !important;
+  border-radius: 12px !important;
+}
+
+.mat-mdc-form-field-flex {
+  padding: 0 12px !important;
+  min-height: 56px !important;
+}
+
+.mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+  top: 22px !important;
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+  transform: translateY(-24.75px) scale(0.75) !important;
+}
+
+.mat-mdc-form-field-infix {
+  padding: 8px 0 !important;
+}
+
+.mat-mdc-form-field-icon-suffix {
+  color: #666 !important;
+  padding-left: 8px !important;
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+  padding: 0 12px !important;
+}
+
+/* Dialog Overlay */
+.cdk-overlay-pane {
+  max-width: 90vw !important;
+}
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(0, 0, 0, 0.32) !important;
+}
+
+/* Error Styling */
+.mat-mdc-form-field-error {
+  font-size: 12px !important;
+  margin-top: 4px !important;
+  color: #f44336 !important;
+}
+
+/* Input Padding */
+.mat-mdc-input-element {
+  padding: 8px 12px !important;
+  margin: 0 !important;
+}
+
+/* Calendar Toggle Button */
+.mat-datepicker-toggle {
+  color: #666 !important;
+}
+
+.mat-datepicker-toggle:hover {
+  color: #3f51b5 !important;
+}
+
+/* Select Arrow */
+.mat-mdc-select-arrow {
+  color: #666 !important;
+}
+
+/* Form Field Border */
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):hover .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):hover .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):hover .mdc-notched-outline__trailing {
+  border-color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.mdc-text-field--outlined.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+.mdc-text-field--outlined.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+.mdc-text-field--outlined.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  border-color: #3f51b5 !important;
+  border-width: 2px !important;
+}
