@@ -34,4 +34,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: aadil-hussain9/resume-ats-checker:latest
+        tags: aadil639/resumeats-b:latest
