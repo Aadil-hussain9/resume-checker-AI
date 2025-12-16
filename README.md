@@ -1,7 +1,7 @@
 # ResumeATSchecker
 ResumeATSchecker is a Java-based web application that utilizes the Apache OpenNLP library for keyword extraction and matching against the contents of a resume PDF file. The application takes a resume PDF and a job description as inputs, and then extracts the text from the PDF file and identifies the relevant keywords from the job description using OpenNLP. It then calculates the percentage of matched keywords in the resume and identifies any unmatched keywords.
 
-The project is designed to assist job seekers in ensuring that their resumes are optimized for applicant tracking systems (ATS) used by many employers. By identifying the relevant keywords from the job description, the application helps job seekers to tailor their resumes to meet the requirements of the specific job.
+The project is designed to assist job seekers in ensuring that their resumes are optimized for applicant tracking systems (ATS) used by many employers. By identifying the relevant keywords from the job description, the application helps job seekers to tailor their resumes to meet the requirements of the specific job.and wokr
 
 ## Getting Started
 ### Prerequisites
